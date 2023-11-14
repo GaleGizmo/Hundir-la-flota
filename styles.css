@@ -1,0 +1,118 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+#tablero-de-juego {
+    width: 100%;
+    /* height: 500px; */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0 auto;
+    background-color: gray;
+    gap: 2px;
+  }
+  #info-disparos {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+   
+    font-weight: 700;
+   
+    background-color: black;
+    color: azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 4px solid cornflowerblue;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+  .info-barcos {
+    position: absolute;
+    top: 50px;
+    left: -240px;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 15%;
+    border: 4px solid cornflowerblue;
+    background-color: black;
+  }
+  p[id^="info-barcos__"] {
+    font-size: 14px;
+  }
+  .disparos {
+    color: red;
+    font-size: large;
+    padding-left: 5px;
+    margin: auto 0;
+  }
+  #disparos-restantes {
+   
+    margin: auto 0
+  }
+  .casilla {
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .agua {
+    background-color: blue;
+
+    color: white;
+  }
+
+  .hundido {
+    background-color: red;
+  }
+  .hundidos {
+    color: red;
+    padding-left: 5px;
+  }
+  .quedan {
+    color: forestgreen;
+    padding-left: 5px;
+  }
+  @media (max-width: 1024px){
+    main{
+      width: 60%;
+      margin-right: 2%;
+    }
+    p[id^="info-barcos__"] {
+      font-size: 12px;
+    }
+    .info-barcos span{
+      font-size: 14px;
+
+    }
+  }
+  @media (max-width: 660px){
+    main {
+      width: 96%;
+      margin: 0 auto;
+    }
+    .info-barcos{
+      transform: translateY(200%);
+      
+      height: fit-content;
+      left:0
+    }
+    #regla-barcos{
+      width: fit-content;
+      margin-left: auto;
+      margin-top: 3px;
+    }
+  }
+  @media (max-width: 450px){
+    .casilla{
+      font-size: 14px;
+      padding: 5px;
+    }
+    .info-barcos{
+      transform: translateY(145%);}
+  }

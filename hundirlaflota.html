@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hundir la Flota</title>
+  </head>
+  <body>
+    <main>
+      <div id="info-disparos">
+        <p id="disparos-restantes">DISPAROS RESTANTES:</p>
+        <div class="info-barcos">
+          <span>BARCOS RESTANTES:</span>
+          <hr />
+          <p id="info-barcos__port">
+            PORTAAVIONES: <span id="port" class="tipos-de-barcos"></span>
+          </p>
+          <p id="info-barcos__dest">
+            DESTRUCTOR: <span id="dest" class="tipos-de-barcos"></span>
+          </p>
+          <p id="info-barcos__acor">
+            ACORAZADO: <span id="acor" class="tipos-de-barcos"></span>
+          </p>
+          <p id="info-barcos__frag">
+            FRAGATA: <span id="frag" class="tipos-de-barcos"></span>
+          </p>
+          <br />
+          <span id="barcos-hundidos">HUNDIDOS:</span><br />
+          <span id="barcos-quedan">QUEDAN:</span>
+        </div>
+      </div>
+      <div id="tablero-de-juego"></div>
+      <div>
+        <p id="regla-barcos">*Los barcos no pueden tocarse</p>
+      </div>
+    </main>
+
+    <script type="module" src="hundirlaflota.js"></script>
+  </body>
+</html>
