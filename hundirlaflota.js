@@ -183,9 +183,9 @@ function disparar(
 
 function muestraBarcos(barcosHundidos) {
   barcos.innerHTML = `${barcosHundidos}`;
-  muestraBarcosHundidosTxt.insertAdjacentElement("afterend", barcos);
+  muestraBarcosHundidosTxt.insertAdjacentElement("beforeend", barcos);
   barcosQuedan.innerHTML = `${10 - barcosHundidos}`;
-  muestraBarcosQuedanTxt.insertAdjacentElement("afterend", barcosQuedan);
+  muestraBarcosQuedanTxt.insertAdjacentElement("beforeend", barcosQuedan);
 }
 
 function muestraDisparos(disparosRestantes) {
