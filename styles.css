@@ -83,8 +83,13 @@ main{
     background-color: red;
   }
   .info-barcos__status{
+    width: 100%;
     display: block;
+    text-align: center;
+    font-weight: 700;
     margin: 0;
+    font-size: 16px;
+  
   }
   .hundidos {
     
@@ -92,6 +97,7 @@ main{
     padding-left: 5px;
   }
   .quedan {
+    
     color: forestgreen;
     padding-left: 5px;
   }
@@ -103,8 +109,8 @@ main{
     p[id^="info-barcos__"] {
       font-size: 12px;
     }
-    .info-barcos span{
-      font-size: 14px;
+    .info-barcos p{
+      font-size: 15px;
 
     }
   }
@@ -123,6 +129,7 @@ main{
       width: fit-content;
       margin-left: auto;
       margin-top: 3px;
+      font-weight: 500;
     }
   }
   @media (max-width: 450px){
@@ -132,4 +139,17 @@ main{
     }
     .info-barcos{
       transform: translateY(120%);}
+  }
+  @media (max-height: 700px){
+    .info-barcos p {
+      font-size: 10px;
+  }
+  .info-barcos__rest{
+    font-size: 12px;
+  }
+  .info-barcos{
+    transform: translateY(145%);}
+    #regla-barcos{
+      font-size: 12px;
+    }
   }
